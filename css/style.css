@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/yeseva-one-v15-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/yeseva-one-v15-latin_cyrillic-regular.woff") format("woff");
+}
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  letter-spacing: 0.08em;
+}
+
+h3 {
+  font-size: 4rem;
+  color: #fff2f2;
+}
+
+h4 {
+  color: #3b1010;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 126.5%;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+a {
+  font-size: 1.8rem;
+  color: #fff2f2;
+  text-decoration: none;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  color: #fff2f2;
+  font-family: Yeseva One;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 3rem 0 2.7rem 4rem;
+}
+
+.list {
+  list-style: none;
+  margin-left: 9rem;
+}
+
+.list__item {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
+
+.list :last-child {
+  margin-bottom: 0;
+}
