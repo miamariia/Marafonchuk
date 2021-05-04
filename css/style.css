@@ -41,16 +41,20 @@ h4 {
   line-height: 126.5%;
 }
 
-p {
-  font-size: 1.4rem;
-}
-
 a {
   font-size: 1.8rem;
   color: #fff2f2;
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+  font-weight: 300;
+}
+
+p {
+  font-weight: 300;
+}
 /* Header */
 .header {
   width: 100%;
@@ -69,7 +73,6 @@ a {
 }
 
 .list {
-  list-style: none;
   margin-left: 9rem;
 }
 
@@ -84,7 +87,7 @@ a {
   margin-bottom: 0;
 }
 
-@media screen and (min-widht: 992px) {
+@media screen and (min-width: 769px) {
   .logo {
     font-size: 2.4rem;
   }
@@ -97,9 +100,9 @@ a {
 }
 
 .main__header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .title {
@@ -119,12 +122,80 @@ a {
   left: 15%;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 769px) {
   .title {
     font-size: 4.8rem;
   }
 
   .title--accent {
     font-size: 5.2rem;
+  }
+}
+
+/* Promo Section */
+.section {
+  padding: 2.5rem 0;
+}
+
+.promo {
+  background: linear-gradient(180deg, #3b1010 0%, #8d381f 100%);
+  color: #fff2f2;
+  font-size: 1.6rem;
+}
+
+.heading {
+  font-family: Yeseva One;
+  font-weight: normal;
+}
+
+.heading--primary {
+  color: #fff2f2;
+}
+
+.promo__heading {
+  font-size: 3.2rem;
+}
+
+.promo__text {
+  margin-top: 3.5rem;
+  line-height: 1.5;
+}
+
+.promo__list {
+  margin: 3.5rem 0 0 4rem;
+}
+
+.promo__list li {
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 769px) {
+  .promo {
+    background: #3c1010;
+    display: flex;
+  }
+
+  .bg-img {
+    height: 100vh;
+    width: 100%;
+    background: url("../images/girl-dance.jpg") center/cover no-repeat;
+  }
+
+  .promo__heading {
+    font-size: 3.6rem;
+  }
+
+  .promo__container {
+    padding: 2.5rem 3vw;
+  }
+
+  .promo__text {
+    margin-top: 2vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .promo__text {
+    margin-top: 2rem;
   }
 }
