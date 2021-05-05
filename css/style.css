@@ -29,13 +29,19 @@ body {
   font-family: sans-serif;
 }
 
-h3 {
+h1,
+h2,
+h3,
+h4 {
+  font-family: Yeseva One;
+}
+
+h2 {
   font-size: 4rem;
   color: #fff2f2;
 }
 
 h4 {
-  font-family: Yeseva One;
   color: #3b1010;
   font-size: 2.2rem;
   font-weight: 600;
@@ -66,7 +72,6 @@ p {
 
 .logo {
   color: #fff2f2;
-  font-family: Yeseva One;
   font-size: 2.2rem;
   font-weight: 400;
   line-height: 1.2;
@@ -211,14 +216,14 @@ p {
 
 /* Card */
 .card {
+  align-items: center;
+  background: #fff2f2;
+  box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.13);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 1.8rem 3.4rem;
-  background: #fff2f2;
-  box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.13);
   margin-bottom: 3rem;
+  padding: 1.8rem 3.4rem;
 }
 
 .card__icon {
@@ -232,6 +237,10 @@ p {
   line-height: 1.5;
 }
 
+.card__descr--team {
+  color: #fff2f2;
+}
+
 /* Advantages */
 .advantages {
   background: linear-gradient(180deg, #8e3920 0%, #ac4d2d 100%);
@@ -239,15 +248,15 @@ p {
 
 @media screen and (min-width: 769px) {
   .advantages {
-    min-height: 100vh;
     background: url("../images/yoga-get.jpg") center/cover no-repeat;
+    min-height: 100vh;
   }
 
   .advantages__container {
-    min-height: 100vh;
+    column-gap: 2vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 2vw;
+    min-height: 100vh;
   }
 
   .heading {
@@ -257,10 +266,56 @@ p {
   .card--top {
     align-self: flex-start;
   }
+
   .card--center {
     align-self: center;
   }
+
   .card--bottom {
     align-self: flex-end;
+  }
+}
+
+/* Team Section */
+.team {
+  background: linear-gradient(180deg, #ab4c2c 0%, #f58655 100%);
+}
+
+.team .card {
+  background: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.team img {
+  border: 5px solid #fff2f2;
+  width: 100%;
+}
+
+.team__title {
+  background: #fff2f2;
+  color: #3b1010;
+  font-size: 2.1rem;
+  letter-spacing: 0.08em;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 769px) {
+  .team__card {
+    flex-direction: row;
+  }
+
+  .team__title {
+    display: inline;
+  }
+  .card__descr--team {
+    margin-left: 3rem;
+  }
+
+  .team img {
+    width: auto;
   }
 }
