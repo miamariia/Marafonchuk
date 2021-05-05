@@ -292,10 +292,11 @@ p {
   width: 100%;
 }
 
-.team__title {
+.title--underlined {
   background: #fff2f2;
   color: #3b1010;
   font-size: 2.1rem;
+  font-weight: 400;
   letter-spacing: 0.08em;
   padding: 1.5rem;
   text-align: center;
@@ -304,6 +305,9 @@ p {
 }
 
 @media screen and (min-width: 769px) {
+  .team {
+    background: #3b1010;
+  }
   .team__card {
     flex-direction: row;
   }
@@ -313,9 +317,120 @@ p {
   }
   .card__descr--team {
     margin-left: 3rem;
+    text-align: left;
   }
 
   .team img {
     width: auto;
   }
+}
+
+/* Price Card */
+.price {
+  background: url("../images/priceMobileBack.jpg") center/cover no-repeat;
+}
+
+.price__heading {
+  text-align: center;
+}
+
+.price__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.price__card {
+  max-width: 320px;
+  border: 10px solid #3b1010;
+  margin: 3rem 2rem;
+}
+
+.price__card--standart {
+  background: linear-gradient(180deg, #feaaaa 0%, rgba(252, 236, 236, 0) 96.35%),
+    #fff9f9;
+}
+
+.price__card--premium {
+  background: linear-gradient(180deg, #ffd15a 0%, rgba(255, 238, 204, 0) 96.35%),
+    #fff9f9;
+}
+
+.price__title {
+  background: 0;
+  text-align: left;
+  padding: 0;
+}
+
+.price__header {
+  font-family: Yeseva One;
+  color: #3b1010;
+  margin: 1.9rem 2.5rem;
+}
+
+.price__subtitle {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 126.5%;
+  text-transform: uppercase;
+}
+
+.price__subtitle span {
+  font-size: 1.2rem;
+}
+
+.line {
+  background: #3b1010;
+  width: 230px;
+  height: 0.5px;
+  margin: 0 auto;
+}
+
+.line--long {
+  width: 150px;
+  height: 0.5px;
+  margin: 1rem auto;
+}
+
+.price__list {
+  margin: 4rem 3rem;
+}
+
+.price__list-item {
+  list-style: disc;
+  font-size: 1.4rem;
+}
+
+.price__btn {
+  display: block;
+  margin: 3rem auto;
+}
+
+@media screen and (min-width: 769px) {
+  .price {
+    background: url("../images/mountains.jpg") center/cover no-repeat;
+  }
+  .price__container {
+    justify-content: space-evenly;
+  }
+}
+
+/* Button */
+.btn {
+  border: 0;
+  width: 119px;
+  height: 33px;
+  background: #3b1010;
+  border-radius: 20px;
+  font-family: Yeseva One;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 126.5%;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fffbfb;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #472525;
 }
