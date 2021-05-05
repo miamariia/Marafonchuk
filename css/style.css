@@ -458,3 +458,19 @@ p {
     flex-direction: row;
   }
 }
+
+/* Footer */
+.footer {
+  background: #3b1010;
+}
+
+.footer__link {
+  margin: 0 1rem;
+}
+
+.footer__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 20vh;
+}
