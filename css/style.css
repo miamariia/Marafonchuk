@@ -496,3 +496,55 @@ p {
   justify-content: space-evenly;
   min-height: 20vh;
 }
+
+/* Approach Section */
+.approach {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .approach {
+    display: block;
+    background: #FFF2F2;
+  }
+
+  .approach__heading {
+    text-align: center;
+    color: #3B1010;
+  }
+
+  .approach__list {
+    margin-left: 3vw;
+  }
+  .approach__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+    font-size: 2.4rem;
+  }
+
+  .approach__item img {
+    width: 3vw;
+    margin-right: 1vw;
+  }
+
+  .approach__item p {
+    color: #3B1010;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .approach__list {
+    margin-left: 40px;
+  }
+
+  .approach__item {
+    margin-bottom: 15px;
+  }
+
+  .approach__item img {
+    width: 43px;
+    margin-right: 20px;
+  }
+}
